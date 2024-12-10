@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Unidades</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Conversor de Unidades</h1>
+    </header>
+    <main>
+        <section class="converter" id="distance-converter">
+            <h2>Conversão de Distâncias</h2>
+            <label for="distance-input">Digite o valor:</label>
+            <input type="number" id="distance-input" placeholder="Ex: 1">
+
+            <select id="distance-unit">
+                <option value="km-to-m">Quilômetros para Metros</option>
+                <option value="m-to-km">Metros para Quilômetros</option>
+            </select>
+
+            <button onclick="convertDistance()">Converter</button>
+
+            <p id="distance-result">Resultado: </p>
+        </section>
+
+        <section class="converter" id="temperature-converter">
+            <h2>Conversão de Temperaturas</h2>
+            <label for="temperature-input">Digite o valor:</label>
+            <input type="number" id="temperature-input" placeholder="Ex: 30">
+
+            <select id="temperature-unit">
+                <option value="c-to-f">Celsius para Fahrenheit</option>
+                <option value="f-to-c">Fahrenheit para Celsius</option>
+            </select>
+
+            <button onclick="convertTemperature()">Converter</button>
+
+            <p id="temperature-result">Resultado: </p>
+        </section>
+
+        <section class="converter" id="weight-converter">
+            <h2>Conversão de Pesos</h2>
+            <label for="weight-input">Digite o valor:</label>
+            <input type="number" id="weight-input" placeholder="Ex: 5">
+
+            <select id="weight-unit">
+                <option value="kg-to-lb">Quilogramas para Libras</option>
+                <option value="lb-to-kg">Libras para Quilogramas</option>
+            </select>
+
+            <button onclick="convertWeight()">Converter</button>
+
+            <p id="weight-result">Resultado: </p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
